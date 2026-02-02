@@ -43,6 +43,12 @@
     }
     .animate-float { animation: float 6s ease-in-out infinite; }
     
+    /* Efeito para uniformizar as imagens com o fundo */
+    .img-blend {
+      mix-blend-mode: screen;
+      filter: drop-shadow(0 0 30px rgba(0,255,149,0.1));
+    }
+
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #050505; }
     ::-webkit-scrollbar-thumb { background: #1a1a1a; border-radius: 10px; }
@@ -62,7 +68,7 @@
       <a href="#depoimentos" class="hover:text-white transition">Depoimentos</a>
       <a href="#contato" class="hover:text-white transition">Contato</a>
     </div>
-    <a href="https://wa.me/5553991021608?text=Olá!%20Vi%20o%20site%20do%20Serrat%20Studio%20e%20gostaria%20de%20uma%20consultoria%20estratégica%20para%20o%20meu%20projeto." target="_blank" class="bg-[#00FF95] text-black px-5 py-2 rounded-full text-xs font-bold hover:shadow-[0_0_15px_rgba(0,255,149,.3)] transition">
+    <a href="https://wa.me/5553991048340?text=Olá!%20Vi%20o%20site%20do%20Serrat%20Studio%20e%20gostaria%20de%20uma%20consultoria%20estratégica%20para%20o%20meu%20projeto." target="_blank" class="bg-[#00FF95] text-black px-5 py-2 rounded-full text-xs font-bold hover:shadow-[0_0_15px_rgba(0,255,149,.3)] transition">
       Falar com Especialista
     </a>
   </div>
@@ -74,16 +80,16 @@
     
     <div class="max-w-xl text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
       <span class="inline-block mb-8 px-4 py-1 text-[10px] tracking-[0.3em] uppercase border border-white/10 rounded-full text-[#00FF95] glass">
-        SERRAT STUDIO • ARQUITETURA DIGITAL
+        SERRAT STUDIO • RESULTADOS REAIS
       </span>
       <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold font-display leading-[1.1] mb-8">
-        Experiências que <br>
+        Sua qualidade <br>
         <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-500">
-          posicionam e convertem.
+          gera lucro real.
         </span>
       </h1>
       <p class="text-gray-400 text-lg leading-relaxed mb-12">
-        Não criamos apenas sites. Desenhamos o tabuleiro onde sua marca domina o mercado com design high-end e tecnologia de ponta.
+        Não criamos apenas sites. Desenhamos o tabuleiro onde seu negócio humilde e de alta qualidade domina o mercado com estratégia e inteligência.
       </p>
       <div class="flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
         <a href="#contato" class="bg-white text-black px-10 py-4 rounded-xl font-bold text-sm hover:bg-[#00FF95] transition text-center shadow-lg">Solicitar Projeto Premium</a>
@@ -93,7 +99,7 @@
 
     <div class="relative flex justify-center md:justify-end items-center" data-aos="zoom-in" data-aos-duration="1200">
       <div class="absolute w-80 h-80 bg-[#00FF95]/5 blur-[120px] rounded-full"></div>
-      <img src="rei.png" alt="Rei Xadrez" class="relative z-10 max-h-[75vh] w-auto animate-float drop-shadow-[0_10px_50px_rgba(0,0,0,1)]">
+      <img src="rei.png" alt="Rei Xadrez" class="relative z-10 max-h-[75vh] w-auto animate-float img-blend drop-shadow-[0_10px_50px_rgba(0,0,0,1)]">
     </div>
   </div>
 </section>
@@ -101,12 +107,12 @@
 <section id="estrategia" class="py-32 px-6 bg-[#070707]">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
     <div data-aos="fade-right" data-aos-duration="1000">
-        <h2 class="text-4xl md:text-5xl font-bold font-display mb-6 text-white">O Campo de Batalha Estratégico</h2>
+        <h2 class="text-4xl md:text-5xl font-bold font-display mb-6 text-white">Estratégia que vira Venda</h2>
         <p class="text-gray-400 text-lg leading-relaxed mb-8">
-            No mercado digital, cada pixel é uma jogada. Nossa arquitetura garante que você esteja sempre três passos à frente da concorrência, utilizando o design como sua peça mais letal.
+            No mercado digital, cada pixel é uma jogada. Nossa arquitetura garante que seu trabalho de qualidade seja visto por quem realmente quer comprar, utilizando o design como sua peça mais letal.
         </p>
         <div class="inline-flex items-center gap-4 text-[#00FF95] font-bold tracking-widest text-sm">
-            <span class="w-12 h-[1px] bg-[#00FF95]"></span> POSICIONAMENTO REAL
+            <span class="w-12 h-[1px] bg-[#00FF95]"></span> CRESCIMENTO REAL
         </div>
     </div>
     
@@ -115,7 +121,7 @@
         <img 
           src="tabuleiro.png" 
           alt="Tabuleiro Estratégico Serrat Studio" 
-          class="relative z-10 rounded-2xl border border-white/10 glass shadow-2xl transition-all duration-700 group-hover:border-[#00FF95]/30 group-hover:scale-[1.01] w-full h-auto"
+          class="relative z-10 rounded-2xl border border-white/10 glass shadow-2xl transition-all duration-700 group-hover:border-[#00FF95]/30 group-hover:scale-[1.01] w-full h-auto img-blend"
         >
     </div>
   </div>
@@ -124,30 +130,30 @@
 <section id="metodo" class="py-32 px-6 bg-[#050505]">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-20" data-aos="fade-up">
-      <h2 class="text-4xl md:text-5xl font-bold font-display mb-6">O Jogo Estratégico™</h2>
-      <p class="text-gray-500 max-w-2xl mx-auto text-lg">Processos calculados para o domínio absoluto do seu nicho.</p>
+      <h2 class="text-4xl md:text-5xl font-bold font-display mb-6">O Jogo do Lucro™</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto text-lg">Processos calculados para o crescimento absoluto do seu negócio.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <div class="glass p-10 rounded-3xl border-white/5" data-aos="fade-up" data-aos-delay="100">
         <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">01</span>
-        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Abertura</h4>
-        <p class="text-gray-400 text-sm mt-4">Imersão total no DNA da marca e análise de mercado.</p>
+        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Análise</h4>
+        <p class="text-gray-400 text-sm mt-4">Entendemos sua qualidade e onde estão seus clientes.</p>
       </div>
       <div class="glass p-10 rounded-3xl border-white/5" data-aos="fade-up" data-aos-delay="200">
         <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">02</span>
-        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Desenvolvimento</h4>
-        <p class="text-gray-400 text-sm mt-4">Arquitetura de informação e UX guiada por dados.</p>
+        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Estratégia</h4>
+        <p class="text-gray-400 text-sm mt-4">Criamos o plano de ataque para atrair vendas reais.</p>
       </div>
       <div class="glass p-10 rounded-3xl border-white/5" data-aos="fade-up" data-aos-delay="300">
         <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">03</span>
-        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Domínio</h4>
-        <p class="text-gray-400 text-sm mt-4">Design visual de alto impacto focado em desejo.</p>
+        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Ativo Digital</h4>
+        <p class="text-gray-400 text-sm mt-4">Construímos sua presença com o novo padrão de IA.</p>
       </div>
       <div class="glass p-10 rounded-3xl border-white/5" data-aos="fade-up" data-aos-delay="400">
         <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">04</span>
-        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Xeque-Mate</h4>
-        <p class="text-gray-400 text-sm mt-4">Lançamento e otimização para conversão contínua.</p>
+        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Escala</h4>
+        <p class="text-gray-400 text-sm mt-4">Colocamos seu negócio para rodar e lucrar 24h.</p>
       </div>
     </div>
   </div>
@@ -155,40 +161,40 @@
 
 <section id="depoimentos" class="py-32 px-6 bg-[#070707]">
   <div class="max-w-7xl mx-auto text-center mb-20" data-aos="fade-up">
-    <h2 class="text-4xl font-bold font-display">O que dizem os Reis do Mercado</h2>
+    <h2 class="text-4xl font-bold font-display">Resultados de Quem Já Virou o Jogo</h2>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
     <div class="glass p-8 rounded-3xl relative" data-aos="fade-up" data-aos-delay="100">
       <i data-lucide="quote" class="text-[#00FF95] opacity-20 absolute top-8 right-8"></i>
-      <p class="text-gray-300 italic mb-8 leading-relaxed">"O Serrat Studio não entregou apenas um site, entregou uma ferramenta de vendas agressiva. Meu posicionamento mudou completamente."</p>
+      <p class="text-gray-300 italic mb-8 leading-relaxed">"O Serrat Studio transformou minha oficina em uma marca de confiança. Hoje as pessoas chegam pelo site já querendo fechar."</p>
       <div class="flex items-center gap-4">
         <div class="w-12 h-12 bg-gradient-to-br from-[#00FF95] to-cyan-500 rounded-full"></div>
         <div>
           <p class="font-bold text-sm">Ricardo Mendes</p>
-          <p class="text-gray-500 text-[10px] uppercase">CEO - TechFlow Solutions</p>
+          <p class="text-gray-500 text-[10px] uppercase">Empreendedor</p>
         </div>
       </div>
     </div>
     <div class="glass p-8 rounded-3xl relative" data-aos="fade-up" data-aos-delay="200">
       <i data-lucide="quote" class="text-[#00FF95] opacity-20 absolute top-8 right-8"></i>
-      <p class="text-gray-300 italic mb-8 leading-relaxed">"O design é impecável. A percepção de valor do meu serviço subiu instantaneamente após o lançamento da nossa nova LP."</p>
+      <p class="text-gray-300 italic mb-8 leading-relaxed">"Sempre tive qualidade, mas ninguém me via. O site novo me deu o posicionamento que eu precisava para crescer."</p>
       <div class="flex items-center gap-4">
         <div class="w-12 h-12 bg-gradient-to-br from-[#00FF95] to-cyan-500 rounded-full"></div>
         <div>
           <p class="font-bold text-sm">Juliana Costa</p>
-          <p class="text-gray-500 text-[10px] uppercase">Diretora - Infinity Luxury</p>
+          <p class="text-gray-500 text-[10px] uppercase">Profissional Liberal</p>
         </div>
       </div>
     </div>
     <div class="glass p-8 rounded-3xl relative" data-aos="fade-up" data-aos-delay="300">
       <i data-lucide="quote" class="text-[#00FF95] opacity-20 absolute top-8 right-8"></i>
-      <p class="text-gray-300 italic mb-8 leading-relaxed">"Rapidez, estratégia e uma estética que nunca vi antes. Perfeito para quem quer liderar o próprio mercado."</p>
+      <p class="text-gray-300 italic mb-8 leading-relaxed">"Rapidez e resultado. O investimento se pagou no primeiro mês com os novos clientes que chegaram."</p>
       <div class="flex items-center gap-4">
         <div class="w-12 h-12 bg-gradient-to-br from-[#00FF95] to-cyan-500 rounded-full"></div>
         <div>
           <p class="font-bold text-sm">Marcos Valente</p>
-          <p class="text-gray-500 text-[10px] uppercase">Founder - Valente Invest</p>
+          <p class="text-gray-500 text-[10px] uppercase">Comerciante</p>
         </div>
       </div>
     </div>
@@ -197,16 +203,16 @@
 
 <section id="contato" class="py-28 px-6">
   <div class="max-w-5xl mx-auto border-gradient rounded-[40px] p-16 text-center bg-[#050505]" data-aos="zoom-in">
-    <h3 class="text-4xl md:text-5xl font-bold font-display mb-6 text-white">Pronto para o seu próximo movimento?</h3>
-    <p class="text-gray-400 max-w-xl mx-auto mb-12 text-lg">Inicie sua consultoria estratégica e transforme sua presença digital em um ativo de luxo.</p>
-    <a href="https://wa.me/5553991021608?text=Olá!%20Vi%20o%20site%20do%20Serrat%20Studio%20e%20gostaria%20de%20uma%20consultoria%20estratégica%20para%20o%20meu%20projeto." target="_blank" class="inline-block bg-[#00FF95] text-black px-12 py-5 rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 transition shadow-2xl">
+    <h3 class="text-4xl md:text-5xl font-bold font-display mb-6 text-white">Pronto para o seu próximo lucro?</h3>
+    <p class="text-gray-400 max-w-xl mx-auto mb-12 text-lg">Inicie sua consultoria e transforme seu trabalho de qualidade em um negócio altamente rentável.</p>
+    <a href="https://wa.me/5553991048340?text=Olá!%20Vi%20o%20site%20do%20Serrat%20Studio%20e%20gostaria%20de%20uma%20consultoria%20estratégica%20para%20o%20meu%20projeto." target="_blank" class="inline-block bg-[#00FF95] text-black px-12 py-5 rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 transition shadow-2xl">
       Iniciar Consultoria Estratégica
     </a>
   </div>
 </section>
 
 <footer class="py-12 border-t border-white/5 text-center text-gray-600 text-[10px] tracking-[0.4em] uppercase">
-  © 2026 Serrat Studio — Todos os direitos reservados
+  © 2026 Serrat Studio — Qualidade que vira Resultado
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
