@@ -43,7 +43,6 @@
     }
     .animate-float { animation: float 6s ease-in-out infinite; }
     
-    /* Efeito para uniformizar as imagens com o fundo */
     .img-blend {
       mix-blend-mode: screen;
       filter: drop-shadow(0 0 30px rgba(0,255,149,0.1));
@@ -59,9 +58,10 @@
 
 <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4">
   <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-    <div class="text-2xl font-bold tracking-tighter font-display text-white">
-      SERRAT<span class="text-[#00FF95]">STUDIO</span>
+    <div class="flex items-center">
+      <img src="logo.png" alt="Serrat Studio" class="h-10 md:h-12 w-auto object-contain">
     </div>
+    
     <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
       <a href="#metodo" class="hover:text-white transition">O Método</a>
       <a href="#estrategia" class="hover:text-white transition">Estratégia</a>
