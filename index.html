@@ -3,89 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Serrat Studio | Branding e Estratégia Digital</title>
+  <title>Serrat Studio | Branding, Design e Estratégia Digital de Alta Performance</title>
   
+  <meta name="description" content="Transformamos negócios de qualidade em marcas de elite com design estratégico e inteligência digital.">
+  <meta property="og:title" content="Serrat Studio | Arquitetura de Marcas Premium">
+  <meta property="og:description" content="Sua qualidade merece o posicionamento de líder. Conheça o Jogo do Lucro™.">
+  <meta property="og:image" content="rei.png">
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
-    body { background-color: #050505; color: #ffffff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    body {
+      background-color: #050505;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      width: 100%;
+    }
     .font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .glass { background: rgba(255,255,255,0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08); }
-    
-    /* Efeito de brilho de fundo */
+    .glass {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
     .hero-glow {
-      position: absolute; top: 0; left: 50%; transform: translateX(-50%);
-      width: 100%; height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
       background: radial-gradient(circle, rgba(0,255,149,0.08) 0%, rgba(5,5,5,0) 70%);
       z-index: -1;
     }
-
-    /* Flutuação suave para as imagens (movimento constante) */
+    .border-gradient {
+      border: 1px solid transparent;
+      background: linear-gradient(#050505, #050505) padding-box, linear-gradient(to bottom right, rgba(0,255,149,.4), rgba(0,122,255,.2)) border-box;
+    }
     @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(1deg); }
     }
     .animate-float { animation: float 6s ease-in-out infinite; }
+    
+    .img-blend {
+      mix-blend-mode: screen;
+      filter: drop-shadow(0 0 30px rgba(0,255,149,0.15));
+    }
 
-    .img-blend { mix-blend-mode: screen; filter: drop-shadow(0 0 30px rgba(0,255,149,0.15)); }
+    .cta-glow:hover {
+      box-shadow: 0 0 30px rgba(0, 255, 149, 0.4);
+      transform: scale(1.02);
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #050505; }
+    ::-webkit-scrollbar-thumb { background: #1a1a1a; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00FF95; }
   </style>
 </head>
-<body>
+<body class="antialiased">
 
-<nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4">
-  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-    <img src="logo.png" alt="Serrat Studio" class="h-8 md:h-12 w-auto">
-    <a href="https://wa.me/5553991048340" class="bg-[#00FF95] text-black px-6 py-2 rounded-full text-[10px] font-bold">QUERO CRESCER</a>
+<nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-3 md:py-4">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="logo.png" alt="Serrat Studio" class="h-7 md:h-12 w-auto object-contain">
+    </div>
+    
+    <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+      <a href="#metodo" class="hover:text-white transition">O Método</a>
+      <a href="#estrategia" class="hover:text-white transition">Estratégia</a>
+      <a href="#depoimentos" class="hover:text-white transition">Depoimentos</a>
+    </div>
+
+    <a href="https://wa.me/5553991048340?text=Olá!%20Gostaria%20de%20uma%20consultoria%20estratégica." target="_blank" class="bg-[#00FF95] text-black px-4 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-bold cta-glow transition-all">
+      QUERO CRESCER
+    </a>
   </div>
 </nav>
 
-<section class="relative min-h-screen flex items-center px-6 pt-20">
+<section class="relative min-h-screen flex items-center px-4 md:px-6 pt-28 pb-16 bg-[#050505] overflow-hidden">
   <div class="hero-glow"></div>
-  <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+  <div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-center gap-12">
     
-    <div data-aos="fade-right" data-aos-duration="1200">
-      <h1 class="text-4xl md:text-7xl font-bold font-display leading-tight mb-8">
+    <div class="max-w-xl text-center md:text-left" data-aos="fade-right" data-aos-duration="1200">
+      <span class="inline-block mb-6 px-4 py-1 text-[9px] tracking-[0.3em] uppercase border border-[#00FF95]/30 rounded-full text-[#00FF95] glass">
+        DESIGN DE ELITE • RESULTADOS REAIS
+      </span>
+      <h1 class="text-4xl md:text-6xl xl:text-7xl font-bold font-display leading-[1.1] mb-8">
         Sua marca com o <br>
-        <span class="text-[#00FF95]">poder de um líder.</span>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00FF95] via-white to-gray-400">
+          poder de um líder.
+        </span>
       </h1>
-      <p class="text-gray-400 text-lg mb-10">Posicionamento visual para marcas impossíveis de ignorar.</p>
-      <a href="#contato" class="bg-[#00FF95] text-black px-10 py-4 rounded-xl font-bold inline-block">Iniciar Projeto Premium</a>
+      <p class="text-gray-400 text-base md:text-lg mb-12">
+        Criamos o posicionamento visual e estratégico para que sua qualidade seja impossível de ignorar.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="#contato" class="bg-[#00FF95] text-black px-8 py-4 rounded-xl font-bold text-sm cta-glow text-center">Iniciar Projeto Premium</a>
+        <a href="#metodo" class="glass px-8 py-4 rounded-xl font-bold text-sm border border-white/10 text-center">Conhecer Método</a>
+      </div>
     </div>
 
     <div class="relative flex justify-center md:justify-end" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
       <div class="absolute w-64 h-64 bg-[#00FF95]/10 blur-[100px] rounded-full"></div>
-      <img src="rei.png" alt="Rei" class="relative z-10 max-h-[60vh] md:max-h-[75vh] w-auto animate-float img-blend">
+      <img src="rei.png" alt="Estratégia" class="relative z-10 max-h-[50vh] md:max-h-[75vh] w-auto animate-float img-blend">
     </div>
   </div>
 </section>
 
-<section class="py-32 px-6 bg-[#070707]">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<section id="estrategia" class="py-20 md:py-32 px-4 md:px-6 bg-[#070707]">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-3xl md:text-5xl font-bold font-display mb-6">Design que domina o mercado</h2>
+        <p class="text-gray-400 text-lg mb-8">Nossa arquitetura garante autoridade, segurança e desejo imediato.</p>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-center gap-3 text-gray-300 text-sm"><i data-lucide="check-circle" class="text-[#00FF95] w-5 h-5"></i> Percepção de Valor Elevada</li>
+          <li class="flex items-center gap-3 text-gray-300 text-sm"><i data-lucide="check-circle" class="text-[#00FF95] w-5 h-5"></i> Conversão Focada em Resultados</li>
+        </ul>
+    </div>
     
-    <div class="relative order-2 md:order-1" data-aos="zoom-in-up" data-aos-duration="1500">
-        <img src="tabuleiro.png" alt="Estratégia" class="relative z-10 rounded-2xl border border-white/10 glass img-blend w-full">
-    </div>
-
-    <div class="order-1 md:order-2" data-aos="fade-left" data-aos-duration="1000">
-        <h2 class="text-3xl md:text-5xl font-bold mb-6">Design que domina o mercado</h2>
-        <p class="text-gray-400 text-lg">Nossa arquitetura garante autoridade imediata.</p>
+    <div class="relative group" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+        <div class="absolute -inset-4 bg-[#00FF95]/10 blur-[60px] rounded-full opacity-50"></div>
+        <img src="tabuleiro.png" alt="Estratégia" class="relative z-10 rounded-2xl border border-white/10 glass w-full h-auto img-blend">
     </div>
   </div>
 </section>
+
+<section id="metodo" class="py-20 md:py-32 px-4 md:px-6 bg-[#050505]">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-3xl md:text-5xl font-bold font-display mb-6">O Jogo do Lucro™</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto text-lg">O método que transforma a sua qualidade técnica em lucro recorrente.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="glass p-8 rounded-3xl border-white/5 group" data-aos="fade-up" data-aos-delay="100">
+        <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">01</span>
+        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Análise de GAP</h4>
+        <p class="text-gray-400 text-sm mt-4">Identificamos as falhas de percepção de valor.</p>
+      </div>
+      <div class="glass p-8 rounded-3xl border-white/5 group" data-aos="fade-up" data-aos-delay="200">
+        <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">02</span>
+        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Branding de Elite</h4>
+        <p class="text-gray-400 text-sm mt-4">Construímos uma identidade visual de topo.</p>
+      </div>
+      <div class="glass p-8 rounded-3xl border-white/5 group" data-aos="fade-up" data-aos-delay="300">
+        <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">03</span>
+        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Ativo Digital</h4>
+        <p class="text-gray-400 text-sm mt-4">Sua página otimizada para converter.</p>
+      </div>
+      <div class="glass p-8 rounded-3xl border-white/5 group" data-aos="fade-up" data-aos-delay="400">
+        <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">04</span>
+        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Escala Real</h4>
+        <p class="text-gray-400 text-sm mt-4">Processos de IA que trabalham por você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" class="py-20 md:py-32 px-4 md:px-6 bg-[#070707]">
+  <div class="max-w-7xl mx-auto text-center mb-16" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold font-display">Resultados de Quem Decidiu Liderar</h2>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+    <div class="glass p-8 rounded-3xl relative" data-aos="fade-up" data-aos-delay="100">
+      <i data-lucide="quote" class="text-[#00FF95] opacity-20 absolute top-8 right-8"></i>
+      <p class="text-gray-300 italic mb-8 text-sm">"O Serrat Studio transformou minha oficina em uma marca de confiança."</p>
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 bg-gradient-to-br from-[#00FF95] to-cyan-500 rounded-full flex items-center justify-center font-bold text-black text-[10px]">RM</div>
+        <p class="font-bold text-xs text-white">Ricardo Mendes</p>
+      </div>
+    </div>
+    <div class="glass p-8 rounded-3xl relative border-t-2 border-[#00FF95]/20" data-aos="fade-up" data-aos-delay="200">
+        <i data-lucide="star" class="text-[#00FF95] opacity-40 absolute top-8 right-8"></i>
+        <p class="text-gray-300 italic mb-8 text-sm">"O posicionamento novo me deu a autoridade que eu precisava."</p>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-gradient-to-br from-[#00FF95] to-cyan-500 rounded-full flex items-center justify-center font-bold text-black text-[10px]">JC</div>
+          <p class="font-bold text-xs text-white">Juliana Costa</p>
+        </div>
+    </div>
+    <div class="glass p-8 rounded-3xl relative" data-aos="fade-up" data-aos-delay="300">
+        <i data-lucide="quote" class="text-[#00FF95] opacity-20 absolute top-8 right-8"></i>
+        <p class="text-gray-300 italic mb-8 text-sm">"O retorno sobre o investimento foi imediato. O site vende por mim."</p>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-gradient-to-br from-[#00FF95] to-cyan-500 rounded-full flex items-center justify-center font-bold text-black text-[10px]">MV</div>
+          <p class="font-bold text-xs text-white">Marcos Valente</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="py-20 px-4 md:px-6">
+  <div class="max-w-5xl mx-auto border-gradient rounded-[30px] p-8 md:p-16 text-center bg-[#050505] relative overflow-hidden" data-aos="zoom-in">
+    <div class="absolute inset-0 bg-[#00FF95]/5 blur-[80px]"></div>
+    <h3 class="text-3xl md:text-5xl font-bold font-display mb-6 relative z-10">O próximo nível começa agora.</h3>
+    <a href="https://wa.me/5553991048340" target="_blank" class="relative z-10 inline-block bg-[#00FF95] text-black px-8 md:px-12 py-4 rounded-full font-bold text-xs cta-glow">
+      SOLICITAR CONSULTORIA ESTRATÉGICA
+    </a>
+  </div>
+</section>
+
+<footer class="py-12 border-t border-white/5 text-center text-gray-600 text-[8px] tracking-[0.4em] uppercase">
+  © 2026 Serrat Studio — Posicionamento de Elite & Design de Alta Performance
+</footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1000,
-    once: false,      // Permite que as imagens escorreguem toda vez que você subir/descer
-    mirror: true,     // Faz a animação acontecer ao rolar para cima também
-    offset: 200       // A imagem só começa a escorregar quando estiver bem visível
+    duration: 1200, // Deslize luxuoso e lento
+    once: false,    // Animação repete ao subir/descer
+    mirror: true,
+    offset: 100
   });
   lucide.createIcons();
 </script>
 
 </body>
 </html>
+    
