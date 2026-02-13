@@ -1,229 +1,256 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Serrat Studio | Branding, Design e Estratégia Digital de Alta Performance</title>
-  
-  <meta name="description" content="Transformamos negócios de qualidade em marcas de elite com design estratégico e inteligência digital.">
-  <meta property="og:title" content="Serrat Studio | Arquitetura de Marcas Premium">
-  <meta property="og:description" content="Sua qualidade merece o posicionamento de líder. Conheça o Jogo do Lucro™.">
-  <meta property="og:image" content="rei.png">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <style>
-    body {
-      background-color: #050505;
-      color: #ffffff;
-      font-family: 'Inter', sans-serif;
-      overflow-x: hidden;
-      width: 100%;
-    }
-    .font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .glass {
-      background: rgba(255,255,255,0.02);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-    .hero-glow {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle, rgba(0,255,149,0.08) 0%, rgba(5,5,5,0) 70%);
-      z-index: -1;
-    }
-    .border-gradient {
-      border: 1px solid transparent;
-      background: linear-gradient(#050505, #050505) padding-box, linear-gradient(to bottom right, rgba(0,255,149,.4), rgba(0,122,255,.2)) border-box;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-15px) rotate(1deg); }
-    }
-    .animate-float { animation: float 6s ease-in-out infinite; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serrat Studio | Simbologia de Poder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     
-    .img-blend {
-      mix-blend-mode: screen;
-      filter: drop-shadow(0 0 30px rgba(0,255,149,0.15));
-    }
+    <style>
+        :root {
+            --gold: #B8860B;
+            --black: #050505;
+            --card-bg: rgba(13, 13, 13, 0.95);
+            --text-gray: #A0A0A0;
+        }
 
-    .cta-glow:hover {
-      box-shadow: 0 0 30px rgba(0, 255, 149, 0.4);
-      transform: scale(1.02);
-    }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #050505; }
-    ::-webkit-scrollbar-thumb { background: #1a1a1a; border-radius: 10px; }
-    ::-webkit-scrollbar-thumb:hover { background: #00FF95; }
-  </style>
+        body {
+            background-color: var(--black);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* HERO - Onde sua imagem principal (Rei/Tabuleiro) brilha */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 20px;
+            /* Se sua imagem for via CSS, ela entra aqui: */
+            background-image: linear-gradient(to bottom, rgba(5,5,5,0.7), var(--black)), url('SUA-IMAGEM-DO-REI.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Efeito Parallax de autoridade */
+        }
+
+        .eyebrow {
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            line-height: 1;
+            margin-bottom: 30px;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .hero-desc {
+            max-width: 750px;
+            margin: 0 auto 40px;
+            font-size: 1.2rem;
+            color: var(--text-gray);
+        }
+
+        /* GRID ESTRATÉGICO - LOGOS, PATHOS, ETHOS */
+        .grid-servicos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 100px 0;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 60px 40px;
+            border: 1px solid #1a1a1a;
+            backdrop-filter: blur(10px);
+            transition: 0.5s;
+        }
+
+        .card:hover { border-color: var(--gold); transform: translateY(-10px); }
+
+        .card-tag {
+            color: var(--gold);
+            font-family: 'Cinzel', serif;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .card h3 { font-family: 'Cinzel', serif; font-size: 1.8rem; margin-bottom: 20px; }
+
+        /* LISTA COM NÚMEROS ÍMPARES (GUSTAVO FERREIRA) */
+        .feature-list { list-style: none; margin-top: 25px; }
+        .feature-list li {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            color: #ddd;
+        }
+        .feature-list li::before {
+            content: "▪";
+            color: var(--gold);
+            margin-right: 15px;
+        }
+
+        /* SEÇÃO DE NICHOS (O MUNDO DOS NEGÓCIOS) */
+        .niche-section { padding: 100px 0; background: #080808; }
+        .niche-title { text-align: center; font-family: 'Cinzel', serif; margin-bottom: 60px; color: var(--gold); }
+        
+        .niche-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .niche-item {
+            padding: 30px;
+            border-left: 1px solid var(--gold);
+            background: rgba(255,255,255,0.02);
+        }
+
+        /* RODAPÉ E ESCASSEZ DE MÉRITO */
+        .cta-footer {
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .status-badge {
+            background: rgba(184, 134, 11, 0.1);
+            color: var(--gold);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .btn-serrat {
+            background: var(--gold);
+            color: #000;
+            padding: 25px 60px;
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            display: inline-block;
+            transition: 0.4s;
+        }
+
+        .btn-serrat:hover { box-shadow: 0 0 50px rgba(184, 134, 11, 0.5); transform: scale(1.05); }
+
+        /* RESPONSIVIDADE ADICIONAL */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .grid-servicos { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
-<body class="antialiased">
+<body>
 
-<nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-3 md:py-4">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
-    <div class="flex items-center">
-      <img src="logo.png" alt="Serrat Studio" class="h-7 md:h-12 w-auto object-contain">
-    </div>
-    
-    <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
-      <a href="#metodo" class="hover:text-white transition">O Método</a>
-      <a href="#estrategia" class="hover:text-white transition">Estratégia</a>
-      <a href="#depoimentos" class="hover:text-white transition">Depoimentos</a>
-    </div>
-
-    <a href="https://wa.me/5553991048340?text=Olá!%20Gostaria%20de%20uma%20consultoria%20estratégica." target="_blank" class="bg-[#00FF95] text-black px-4 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-bold cta-glow transition-all">
-      QUERO CRESCER
-    </a>
-  </div>
-</nav>
-
-<section class="relative min-h-screen flex items-center px-4 md:px-6 pt-28 pb-16 bg-[#050505] overflow-hidden">
-  <div class="hero-glow"></div>
-  <div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-    
-    <div class="max-w-xl text-center md:text-left" data-aos="fade-right" data-aos-duration="1200">
-      <span class="inline-block mb-6 px-4 py-1 text-[9px] tracking-[0.3em] uppercase border border-[#00FF95]/30 rounded-full text-[#00FF95] glass">
-        DESIGN DE ELITE • RESULTADOS REAIS
-      </span>
-      <h1 class="text-4xl md:text-6xl xl:text-7xl font-bold font-display leading-[1.1] mb-8">
-        Sua marca com o <br>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00FF95] via-white to-gray-400">
-          poder de um líder.
-        </span>
-      </h1>
-      <p class="text-gray-400 text-base md:text-lg mb-12">
-        Criamos o posicionamento visual e estratégico para que sua qualidade seja impossível de ignorar.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-        <a href="#contato" class="bg-[#00FF95] text-black px-8 py-4 rounded-xl font-bold text-sm cta-glow text-center">Iniciar Projeto Premium</a>
-        <a href="#metodo" class="glass px-8 py-4 rounded-xl font-bold text-sm border border-white/10 text-center">Conhecer Método</a>
-      </div>
-    </div>
-
-    <div class="relative flex justify-center md:justify-end" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
-      <div class="absolute w-64 h-64 bg-[#00FF95]/10 blur-[100px] rounded-full"></div>
-      <img src="rei.png" alt="Estratégia" class="relative z-10 max-h-[50vh] md:max-h-[75vh] w-auto animate-float img-blend">
-    </div>
-  </div>
-</section>
-
-<section id="estrategia" class="py-20 md:py-32 px-4 md:px-6 bg-[#070707]">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    <div data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="text-3xl md:text-5xl font-bold font-display mb-6">Design que domina o mercado</h2>
-        <p class="text-gray-400 text-lg mb-8">Nossa arquitetura garante autoridade, segurança e desejo imediato.</p>
-        <ul class="space-y-4 mb-8">
-          <li class="flex items-center gap-3 text-gray-300 text-sm"><i data-lucide="check-circle" class="text-[#00FF95] w-5 h-5"></i> Percepção de Valor Elevada</li>
-          <li class="flex items-center gap-3 text-gray-300 text-sm"><i data-lucide="check-circle" class="text-[#00FF95] w-5 h-5"></i> Conversão Focada em Resultados</li>
-        </ul>
-    </div>
-    
-    <div class="relative group" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-        <div class="absolute -inset-4 bg-[#00FF95]/10 blur-[60px] rounded-full opacity-50"></div>
-        <img src="tabuleiro.png" alt="Estratégia" class="relative z-10 rounded-2xl border border-white/10 glass w-full h-auto img-blend">
-    </div>
-  </div>
-</section>
-
-<section id="metodo" class="py-20 md:py-32 px-4 md:px-6 bg-[#050505]">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16" data-aos="fade-up">
-      <h2 class="text-3xl md:text-5xl font-bold font-display mb-6">O Jogo do Lucro™</h2>
-      <p class="text-gray-500 max-w-2xl mx-auto text-lg">O método que transforma a sua qualidade técnica em lucro recorrente.</p>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-      <div class="glass p-8 rounded-3xl border-white/5 group" data-aos="fade-up" data-aos-delay="100">
-        <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">01</span>
-        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Análise de GAP</h4>
-        <p class="text-gray-400 text-sm mt-4">Identificamos as falhas de percepção de valor.</p>
-      </div>
-      <div class="glass p-8 rounded-3xl border-white/5 group" data-aos="fade-up" data-aos-delay="200">
-        <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">02</span>
-        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Branding de Elite</h4>
-        <p class="text-gray-400 text-sm mt-4">Construímos uma identidade visual de topo.</p>
-      </div>
-      <div class="glass p-8 rounded-3xl border-white/5 group" data-aos="fade-up" data-aos-delay="300">
-        <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">03</span>
-        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Ativo Digital</h4>
-        <p class="text-gray-400 text-sm mt-4">Sua página otimizada para converter.</p>
-      </div>
-      <div class="glass p-8 rounded-3xl border-white/5 group" data-aos="fade-up" data-aos-delay="400">
-        <span class="text-[#00FF95] text-5xl font-bold opacity-10 font-display">04</span>
-        <h4 class="mt-4 font-bold uppercase tracking-widest text-xs text-white">Escala Real</h4>
-        <p class="text-gray-400 text-sm mt-4">Processos de IA que trabalham por você.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="depoimentos" class="py-20 md:py-32 px-4 md:px-6 bg-[#070707]">
-  <div class="max-w-7xl mx-auto text-center mb-16" data-aos="fade-up">
-    <h2 class="text-3xl md:text-4xl font-bold font-display">Resultados de Quem Decidiu Liderar</h2>
-  </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-    <div class="glass p-8 rounded-3xl relative" data-aos="fade-up" data-aos-delay="100">
-      <i data-lucide="quote" class="text-[#00FF95] opacity-20 absolute top-8 right-8"></i>
-      <p class="text-gray-300 italic mb-8 text-sm">"O Serrat Studio transformou minha oficina em uma marca de confiança."</p>
-      <div class="flex items-center gap-4">
-        <div class="w-10 h-10 bg-gradient-to-br from-[#00FF95] to-cyan-500 rounded-full flex items-center justify-center font-bold text-black text-[10px]">RM</div>
-        <p class="font-bold text-xs text-white">Ricardo Mendes</p>
-      </div>
-    </div>
-    <div class="glass p-8 rounded-3xl relative border-t-2 border-[#00FF95]/20" data-aos="fade-up" data-aos-delay="200">
-        <i data-lucide="star" class="text-[#00FF95] opacity-40 absolute top-8 right-8"></i>
-        <p class="text-gray-300 italic mb-8 text-sm">"O posicionamento novo me deu a autoridade que eu precisava."</p>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 bg-gradient-to-br from-[#00FF95] to-cyan-500 rounded-full flex items-center justify-center font-bold text-black text-[10px]">JC</div>
-          <p class="font-bold text-xs text-white">Juliana Costa</p>
+    <section class="hero-section">
+        <div class="container">
+            <span class="eyebrow">Arquitetura de Autoridade</span>
+            <h1>Simbologia de Poder para Líderes de Mercado</h1>
+            <p class="hero-desc">
+                Não somos apenas designers. Somos estrategistas de percepção. Usamos <strong>Inteligência Artificial</strong> e neurociência para garantir que sua marca seja a peça mais forte do jogo.
+            </p>
+            <a href="#contato" class="btn-serrat">Iniciar Movimento</a>
         </div>
-    </div>
-    <div class="glass p-8 rounded-3xl relative" data-aos="fade-up" data-aos-delay="300">
-        <i data-lucide="quote" class="text-[#00FF95] opacity-20 absolute top-8 right-8"></i>
-        <p class="text-gray-300 italic mb-8 text-sm">"O retorno sobre o investimento foi imediato. O site vende por mim."</p>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 bg-gradient-to-br from-[#00FF95] to-cyan-500 rounded-full flex items-center justify-center font-bold text-black text-[10px]">MV</div>
-          <p class="font-bold text-xs text-white">Marcos Valente</p>
+    </section>
+
+    <section class="container">
+        <div class="grid-servicos">
+            
+            <div class="card">
+                <span class="card-tag">Logos / Ciência de Dados</span>
+                <h3>Engenharia Visual</h3>
+                <p>Nossa IA assistente valida cada decisão técnica. Não jogamos com a sorte, jogamos com <strong>7 fundamentos lógicos</strong> de conversão.</p>
+                <ul class="feature-list">
+                    <li>Mapeamento de 5 brechas competitivas.</li>
+                    <li>Arquitetura de dados para alto ticket.</li>
+                    <li>Design à prova de tendências passageiras.</li>
+                </ul>
+            </div>
+
+            <div class="card" style="border-color: var(--gold);">
+                <span class="card-tag">Pathos / Conexão Visceral</span>
+                <h3>Domínio do Desejo</h3>
+                <p>Marcas de elite não pedem atenção; elas comandam. Projetamos sua identidade para ativar o subconsciente do cliente em <strong>3 segundos</strong>.</p>
+                <ul class="feature-list">
+                    <li>Psicologia de cores de dominância.</li>
+                    <li>Gatilhos de exclusividade e prestígio.</li>
+                    <li>Storytelling visual que elimina objeções.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">Ethos / O Ativo de Elite</span>
+                <h3>Patrimônio de Marca</h3>
+                <p>Embora novos nesta era, nossos métodos de IA geram <strong>resultados de escala</strong>. Se sua marca não projeta poder, ela está perdendo lucro.</p>
+                <ul class="feature-list">
+                    <li>Entrega de 11 pilares estratégicos.</li>
+                    <li>Selo de exclusividade técnica.</li>
+                    <li>Curadoria focada em Êxito Absoluto.</li>
+                </ul>
+            </div>
+
         </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="contato" class="py-20 px-4 md:px-6">
-  <div class="max-w-5xl mx-auto border-gradient rounded-[30px] p-8 md:p-16 text-center bg-[#050505] relative overflow-hidden" data-aos="zoom-in">
-    <div class="absolute inset-0 bg-[#00FF95]/5 blur-[80px]"></div>
-    <h3 class="text-3xl md:text-5xl font-bold font-display mb-6 relative z-10">O próximo nível começa agora.</h3>
-    <a href="https://wa.me/5553991048340" target="_blank" class="relative z-10 inline-block bg-[#00FF95] text-black px-8 md:px-12 py-4 rounded-full font-bold text-xs cta-glow">
-      SOLICITAR CONSULTORIA ESTRATÉGICA
-    </a>
-  </div>
-</section>
+    <section class="niche-section">
+        <div class="container">
+            <h2 class="niche-title">Aplicações Reais de Domínio</h2>
+            <div class="niche-grid">
+                <div class="niche-item">
+                    <h4>Estética & Saúde</h4>
+                    <p>Clínicas e profissionais que buscam o topo da pirâmide de valor.</p>
+                </div>
+                <div class="niche-item">
+                    <h4>Personal Branding</h4>
+                    <p>Barbearias e especialistas que vestem a imagem como uma armadura.</p>
+                </div>
+                <div class="niche-item">
+                    <h4>Varejo Estratégico</h4>
+                    <p>Ferragens e Lojas que eliminam a concorrência pelo prestígio.</p>
+                </div>
+                <div class="niche-item">
+                    <h4>Prestação de Serviços</h4>
+                    <p>Consultorias que precisam de autoridade inquestionável para cobrar caro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer class="py-12 border-t border-white/5 text-center text-gray-600 text-[8px] tracking-[0.4em] uppercase">
-  © 2026 Serrat Studio — Posicionamento de Elite & Design de Alta Performance
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1200, // Deslize luxuoso e lento
-    once: false,    // Animação repete ao subir/descer
-    mirror: true,
-    offset: 100
-  });
-  lucide.createIcons();
-</script>
+    <section class="cta-footer" id="contato">
+        <div class="container">
+            <span class="status-badge">Ciclo de Atendimento: Alta Demanda</span>
+            <h2 style="font-family: 'Cinzel', serif; font-size: 2.2rem; margin-bottom: 20px;">O Próximo Movimento é Seu.</h2>
+            <p style="color: var(--text-gray); max-width: 650px; margin: 0 auto 40px;">
+                Devido ao rigor técnico do nosso processo assistido por IA e ao índice de êxito dos nossos últimos parceiros, as vagas para novos projetos são limitadas por ciclo de qualidade.
+            </p>
+            <a href="https://wa.me/SEUNUMERO" class="btn-serrat">Garantir Diagnóstico Estratégico</a>
+        </div>
+    </section>
 
 </body>
 </html>
-    
